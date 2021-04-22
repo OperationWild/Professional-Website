@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Ally M Davidge</title>
+    <link>/project/</link>
+      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© {2020}</copyright><lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/Dogbirding</url>
+      <title>Projects</title>
+      <link>/project/</link>
+    </image>
+    
+    <item>
+      <title>Clark&#39;s Nutcracker Forest Habitat Use and Seed Resource Selection in Yellowstone National Park</title>
+      <link>/project/internal-project-2/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/project/internal-project-2/</guid>
+      <description>&lt;p&gt;Nutcrackers are resource driven foragers.
+Within Yellowstone National Park we are trying to determine which confier species are important to nutcrackers and how they use them during cone ripening season.
+Ally is a Graduate Research Assistant on this project tasked with collecting an analyzing the data.&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Freshwater Mites as an Indicator of Water Quality</title>
+      <link>/project/internal-project-3/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/project/internal-project-3/</guid>
+      <description>&lt;p&gt;Freshwater mites are present in lakes and streams. They, like many other macroinvertebrates, can be an indicator of water quality. This project will investigate what water attirbutes can be associated with mites and why. Ally is the lead for this project.&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Long Term Consequences of Phenotypic Variation In Painted Turtles</title>
+      <link>/project/external-project/</link>
+      <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/project/external-project/</guid>
+      <description>&lt;p&gt;Understanding pigmentation of painted turtles through a long-term mark re-capture study spear-headed by the Reinke Lab (Northeastern Illinois University). Ally performs field collection to support this project. View More information about this work at &lt;a href=&#34;http://www.bethreinke.com/&#34;&gt;www.bethreinke.com/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Stable Isotope Analysis and Painted Bunting Origin-Implications for International Pet Trade</title>
+      <link>/project/internal-project-1/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>/project/internal-project-1/</guid>
+      <description>&lt;p&gt;Where do birds that end up in international pet trade come from? How do we know whether or not they have been legally obtained? What happens when a cute colorful songbird crosses a mosaic of different laws and regulations along its migratory route? Tune in to this project for answers to these questions and more! Follow additional work being done in this realm at wwww.andreacontina.com&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Quantifying Urban Prey Availability For City Raptors</title>
+      <link>/project/internal-project/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/project/internal-project/</guid>
+      <description>&lt;p&gt;Investigation into available prey items in urban environments. Camera traps were laid out to get a feel for the food sources available in heavily urban environments. The next step will be a more intense search/assessment followed by connecting those abundances back to urban raptor ecology.&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

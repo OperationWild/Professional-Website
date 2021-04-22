@@ -1,0 +1,6 @@
+"0","```r
+load(lme4)
+
+```"
+"1","Error in load(lme4) : object 'lme4' not found
+"

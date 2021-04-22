@@ -1,0 +1,6 @@
+"0","```r
+m7 <- lmer(ABUND ~ GRAZE + AREA (AREA|GRAZE) birds, REML=F)
+
+```"
+"1","Error: unexpected symbol in \"m7 <- lmer(ABUND ~ GRAZE + AREA (AREA|GRAZE) birds\"
+"

@@ -1,0 +1,53 @@
+"0","```r
+birds <- read.csv(\"loyn.csv\")
+
+birds$GRAZE<-as.factor(birds$GRAZE)
+
+m1<-lm(ABUND~GRAZE, data=birds)
+#Hypothesis 1:Variance in bird abundance can be best explained through the effect of graze score alone.
+m2<-lm(ABUND~AREA,data=birds)
+#Hypothesis 2:Variance in bird abundance can be best explained through the effect of area alone.
+m3<-lm(ABUND~LDIST, data=birds)
+#Hypothesis 3:Variance in bird abundance can be best explained through the effect of distance to the nearest larger patch alone.
+m4<-lm(ABUND~AREA+GRAZE, data=birds)
+#Hypothesis 4:Variance in bird abundance can be best explained through the effect of the interaction between area and graze score.
+m5<-lm(ABUND~LDIST+AREA, data=birds)
+#Hypothesis 5:Variance in bird abundance can be best explained through the effect of the interaction between the distance to the nearest larger patch and area.
+m6<-lm(ABUND~AREA+log(LDIST)+GRAZE, data=birds)
+#Hypothesis 6:Variance in bird abundance can be best explained through the effect of the interaction between area, distance to the nearest larger patch and graze score.
+m7<-lm(ABUND~GRAZE+log(LDIST), data=birds)
+#Hypothesis 7:Variance in bird abundance can be best explained through the effect of the interaction of graze score and log transformed distance to the nearest larger patch.
+m10<-lm(ABUND~GRAZE+log(DIST), data=birds)
+#Hypotesis 10: Variance in bird abundace can be best explained through the effect of the interaction of grace score and log tranformed distance to any patch. 
+
+m0<-lm(ABUND~1, data=birds)
+#Hypothesis Null:Variance in bird abundance can be best explained through the effect of all of our co-factors equally. 
+
+lm.list<-list(m1,m2,m3,m4,m5,m6,m7,m10,m0)
+lm.names<-as.character(unlist(lapply(lm.list,formula)))
+(lm.results<-aictab(lm.list,modnames=lm.names))
+```"
+"1","
+Model selection based on AICc:
+
+                                  K   AICc Delta_AICc AICcWt
+ABUND ~ GRAZE + log(LDIST)        7 390.22       0.00   0.58
+ABUND ~ AREA + log(LDIST) + GRAZE 8 392.33       2.11   0.20
+ABUND ~ GRAZE                     6 393.37       3.15   0.12
+ABUND ~ GRAZE + log(DIST)         7 395.08       4.86   0.05
+ABUND ~ AREA + GRAZE              7 395.46       5.24   0.04
+ABUND ~ AREA                      3 426.41      36.19   0.00
+ABUND ~ 1                         2 427.97      37.75   0.00
+ABUND ~ LDIST + AREA              4 428.36      38.14   0.00
+ABUND ~ LDIST                     3 429.78      39.56   0.00
+                                  Cum.Wt      LL
+ABUND ~ GRAZE + log(LDIST)          0.58 -186.94
+ABUND ~ AREA + log(LDIST) + GRAZE   0.79 -186.63
+ABUND ~ GRAZE                       0.91 -189.83
+ABUND ~ GRAZE + log(DIST)           0.96 -189.37
+ABUND ~ AREA + GRAZE                1.00 -189.56
+ABUND ~ AREA                        1.00 -209.97
+ABUND ~ 1                           1.00 -211.87
+ABUND ~ LDIST + AREA                1.00 -209.79
+ABUND ~ LDIST                       1.00 -211.66
+"
